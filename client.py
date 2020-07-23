@@ -4,15 +4,13 @@ import socket
 
 
 class Client:
-
+    """Create a game server client"""
     def __init__(self,
                  server_host,
                  server_port_tcp=1234,
                  server_port_udp=1234,
                  client_port_udp=1235):
-        """
-        Create a game server client
-        """
+        
         self.identifier = None
         self.server_message = []
         self.room_id = None
