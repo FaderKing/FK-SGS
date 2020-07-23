@@ -39,8 +39,8 @@ client = Client("127.0.0.1", 1234, 1234, 1235)
 # Get room list (room_id, nb_players, capacity)
 rooms = client.get_rooms()
 
-# You can join a room using room identifier (ex: first room)
-client.join(rooms[0]["id"])
+# You can join a room using room identifier
+client.join_room("id")
 
 # You can autojoin the first available room client.autojoin()
 # Or you can create a new room with client.create_room("room_name")
